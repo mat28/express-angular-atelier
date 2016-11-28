@@ -14,7 +14,7 @@ function usersUpdate($route,usersFactory,$scope){
     var postData = {
       name : uu.users.name
     }
-    if(usersForm.$valid){
+    if(usersUpdateForm.$valid){
       usersFactory.usersUpdate(id,postData).then(function(response){
         uu.user = response;
       });
